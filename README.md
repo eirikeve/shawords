@@ -1,7 +1,7 @@
 # SHAwords
 
 ## About
-*Author: Eirik Vesterkjær, 2018 ([eirikeve @ github](https://www.github.com/eirikeve))*
+*Author: Eirik Vesterkjaer, 2018 ([eirikeve @ github](https://www.github.com/eirikeve))*
 
 SHAWords hashes SHA keys (and hex values in general) to words. 
 Several SHA keys can hash to the same sets of words, as the lists of words are limited. 
