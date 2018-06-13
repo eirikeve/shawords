@@ -22,7 +22,7 @@ const int COUNT_W_WORDS         = 25487;
 //////////////////////////////////////////
 // Connectives
 //////////////////////////////////////////
-const std::string W_CONNECTIVES [150] = {
+const std::string W_CONNECTIVES [COUNT_W_CONNECTIVES] = {
 "the",
 "of",
 "and",
@@ -179,7 +179,7 @@ const std::string W_CONNECTIVES [150] = {
 // Proper names
 //////////////////////////////////////////
 
-const std::string W_PROPERNAMES [1323] = {
+const std::string W_PROPERNAMES [COUNT_W_PROPERNAMES] = {
     "Aaron",
 "Adam",
 "Adlai",
@@ -1510,7 +1510,7 @@ const std::string W_PROPERNAMES [1323] = {
 // Words
 //////////////////////////////////////////
 
-const std::string W_WORDS [25487] = 
+const std::string W_WORDS [COUNT_W_WORDS] = 
 {
     "a",
 "AAA",
