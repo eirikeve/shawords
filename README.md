@@ -8,7 +8,7 @@ Several SHA keys can hash to the same sets of words, as the lists of words are l
 The lists of words are from the 1934 Webster's 2nd International dictionary (copyright elapsed - [link to source here](https://svnweb.freebsd.org/csrg/share/dict/).)
 
 ## Installation
-There are no dependencies except for the standard C++ libraries `<string>`, `<iostream>`, `<algorithm>`,  and `<sstream>`. 
+There are no dependencies except for the standard libraries `<cstring>`, `<string>`, `<iostream>`, `<algorithm>`,  and `<sstream>`. 
 You can build with your `C++` compiler, and then rename/add the executable to path.
 ```
 me@my-computer:~/path$ clang++ shawords.cpp words.hpp
