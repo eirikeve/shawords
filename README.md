@@ -19,8 +19,9 @@ me@my-computer:~/path$ clang++ shawords.cpp words.hpp
 
 ## Usage
 
-**Input**: hex value of any length.  
+**Input**: Hex value of any length.  
 **Output**: `roundup(number of characters in input / 10)` words. 
+
 SHAwords can evaluate arguments from `argv`, and piped arguments.
 
 
