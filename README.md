@@ -50,7 +50,7 @@ me@my-computer:~/git-repo$ (git rev-parse HEAD) | shawords
 ethane by piet matchmake 
 ```
 
-**Note**: If you get `a`, `the`, or `aaron` - the first elements of the word tables - as outputs, it's probably because your input was not hexadecimal, and the conversion then gives a value of 0.
+**Note**: If you get `a`, `the`, or `aaron` - the first elements of the word tables - as outputs, it's probably because your input was not hexadecimal, and is interpreted as 0x0.
 
 ## How it hashes
 Each 10 characters from the input will hash to one word. If the input is not divisible by 10, it is padded using the characters from the beginning.
