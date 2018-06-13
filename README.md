@@ -39,6 +39,7 @@ Each 10 characters from the input will hash to one word. If the input is not div
 This means that `shawords 2018` produces the same output as `shawords 2018201820`: `thirtyfold`.
 
 Each of these chunks of 10 characters is interpreted as a hex number and converted to decimal, and then used as an index for selecting a word. The indexes wrap around/overflow, so several values *can* hash to the same word.
+If you want to change the number of chars used for each word, edit the value of `CHAR_CHUNK_SIZE`.
 
 
 When it comes to the output:
