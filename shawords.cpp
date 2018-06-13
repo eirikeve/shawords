@@ -17,6 +17,9 @@
     Written by Eirik Vesterkjaer, 2018 (github.com/eirikeve)
 */
 
+// # of chars of input used for each word
+const int CHAR_CHUNK_SIZE = 10;
+
 void shawords(char * SHAkey);
 
 int main(int argc, char *argv[]) {
@@ -93,15 +96,14 @@ A normal SHA1 key will give 4 words
 */
 void shawords(char * SHAkey){
     // Length of each sequence of the SHA to be converted to a word
-    const int chunkLength = 10;
-    std::string SHAkey_str = convertToFullChunkString(SHAkey, chunkLength);
-    int chunks = SHAkey_str.length() / chunkLength;
+    std::string SHAkey_str = convertToFullChunkString(SHAkey, CHAR_CHUNK_SIZE);
+    int chunks = SHAkey_str.length() / CHAR_CHUNK_SIZE;
 
     try {
         std::string words[chunks];
         for (int i = 0; i < chunks; i++) {
             // Split into chunks, convert, and output
-            std::string hexValue = SHAkey_str.substr(i*chunkLength, chunkLength);
+            std::string hexValue = SHAkey_str.substr(i*CHAR_CHUNK_SIZE, CHAR_CHUNK_SIZE);
             words[i] = hashToWord(hexValue, i);
         }
         for (int i = 0; i < chunks; i++) {
